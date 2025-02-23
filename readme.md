@@ -118,13 +118,6 @@ move the database into the mysql database
 ```sh
 mysql -h your-rds-endpoint.rds.amazonaws.com -u admin -p
 ```
-### **For PostgreSQL:**
-```sh
-psql -h your-rds-endpoint.rds.amazonaws.com -U admin -d mydatabase
-```
-(Enter your password when prompted.)
-
-
 ## **📂 Step 6: Migrate Your Database**
 ### **Step 1: Transfer Backup File from Local Machine to EC2**
 ```sh
@@ -136,9 +129,6 @@ mysql -h your-rds-endpoint.rds.amazonaws.com -u admin -p mydatabase < /home/ubun
 ```
 ![Screenshot 2025-02-07 192809](https://github.com/user-attachments/assets/0877eadf-203c-46ee-be19-e39bd8933986)
 
-
-## **Step 7: Update Your Application**
-### **For Django (Python)**
 ```plaintext
 DATABASE_URL=mysql://admin:yourpassword@your-rds-endpoint.rds.amazonaws.com:5432/mydatabase
 ```
@@ -147,15 +137,20 @@ DATABASE_URL=mysql://admin:yourpassword@your-rds-endpoint.rds.amazonaws.com:5432
 ![Screenshot 2025-02-07 192838](https://github.com/user-attachments/assets/4b7d7771-0d35-49d8-846f-fbfc47e35ce1)
 ![Screenshot 2025-02-07 192843](https://github.com/user-attachments/assets/7d429c7f-e0e3-441c-a3db-c86eee7192c1)
 
-### **For Laravel (PHP)**
-```plaintext
-DB_CONNECTION=mysql
-DB_HOST=your-rds-endpoint.rds.amazonaws.com
-DB_PORT=3306
-DB_DATABASE=mydatabase
-DB_USERNAME=admin
-DB_PASSWORD=yourpassword
-```
+After copying the database into the    RDS database confirm and check if the data is there and also check the logs
+
+![Screenshot 2025-02-15 092039](https://github.com/user-attachments/assets/0d23539a-da22-4dee-a8cc-d9e628c68774)
+![Screenshot 2025-02-15 092109](https://github.com/user-attachments/assets/a7cbb46a-257e-4d7e-b597-43281a8fef22)
+![Screenshot 2025-02-15 120757](https://github.com/user-attachments/assets/edc25d98-26e3-42f2-94bd-da489c9a064f)
+![Screenshot 2025-02-15 094311](https://github.com/user-attachments/assets/45bc73f1-8063-451f-93f2-0d57bf06df88)
+![Screenshot 2025-02-15 093606](https://github.com/user-attachments/assets/5b2ed822-be1f-4701-aeec-07f497fdcd05)
+![Screenshot 2025-02-15 093146](https://github.com/user-attachments/assets/136dc499-0693-4f6b-b399-d677d5784879)
+![Screenshot 2025-02-15 121557](https://github.com/user-attachments/assets/09c010b4-6f75-4c6b-9c51-daebba284fad)
+![Screenshot 2025-02-15 121545](https://github.com/user-attachments/assets/1310ebf8-70c2-4f43-af0f-a9f5d3010c97)
+
+Then delete the resources if not in use
+![Screenshot 2025-02-15 120855](https://github.com/user-attachments/assets/3a000313-b8d1-4dd6-8021-aafa5cf6b852)
+![Screenshot 2025-02-15 120838](https://github.com/user-attachments/assets/1e22fd65-16a4-472e-bfc9-e8fbd50114e7)
 ## ** Troubleshooting**
 ###  **Permission Denied (SSH Key Issue)**
 ```sh
