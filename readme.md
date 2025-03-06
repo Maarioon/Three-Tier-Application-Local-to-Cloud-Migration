@@ -137,7 +137,7 @@ DATABASE_URL=mysql://admin:yourpassword@your-rds-endpoint.rds.amazonaws.com:5432
 ![Screenshot 2025-02-07 192838](https://github.com/user-attachments/assets/4b7d7771-0d35-49d8-846f-fbfc47e35ce1)
 ![Screenshot 2025-02-07 192843](https://github.com/user-attachments/assets/7d429c7f-e0e3-441c-a3db-c86eee7192c1)
 
-After copying the database into the    RDS database confirm and check if the data is there and also check the logs
+After copying the database into the RDS database confirm and check if the data is there and also check the logs
 
 ![Screenshot 2025-02-15 092039](https://github.com/user-attachments/assets/0d23539a-da22-4dee-a8cc-d9e628c68774)
 ![Screenshot 2025-02-15 092109](https://github.com/user-attachments/assets/a7cbb46a-257e-4d7e-b597-43281a8fef22)
@@ -147,6 +147,12 @@ After copying the database into the    RDS database confirm and check if the dat
 ![Screenshot 2025-02-15 093146](https://github.com/user-attachments/assets/136dc499-0693-4f6b-b399-d677d5784879)
 ![Screenshot 2025-02-15 121557](https://github.com/user-attachments/assets/09c010b4-6f75-4c6b-9c51-daebba284fad)
 ![Screenshot 2025-02-15 121545](https://github.com/user-attachments/assets/1310ebf8-70c2-4f43-af0f-a9f5d3010c97)
+
+final look
+[Uploading 1_KpXvCRLl_CgLxWj9TqAl3g.webp…]()
+
+and see that our data persist
+[Uploading 1_8O9ChITvj9pynIJmdKnegw.webp…]()
 
 Then delete the resources if not in use
 ![Screenshot 2025-02-15 120855](https://github.com/user-attachments/assets/3a000313-b8d1-4dd6-8021-aafa5cf6b852)
