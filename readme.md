@@ -149,10 +149,10 @@ After copying the database into the RDS database confirm and check if the data i
 ![Screenshot 2025-02-15 121545](https://github.com/user-attachments/assets/1310ebf8-70c2-4f43-af0f-a9f5d3010c97)
 
 final look
-[Uploading 1_KpXvCRLl_CgLxWj9TqAl3g.webp…]()
+![1_KpXvCRLl_CgLxWj9TqAl3g](https://github.com/user-attachments/assets/9286be77-2408-4223-b713-64a42576a8cf)
 
 and see that our data persist
-[Uploading 1_8O9ChITvj9pynIJmdKnegw.webp…]()
+![1_8O9ChITvj9pynIJmdKnegw](https://github.com/user-attachments/assets/1176f71b-bf9e-46ef-89d3-71bcc8aacb4a)
 
 Then delete the resources if not in use
 ![Screenshot 2025-02-15 120855](https://github.com/user-attachments/assets/3a000313-b8d1-4dd6-8021-aafa5cf6b852)
